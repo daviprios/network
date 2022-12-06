@@ -2,7 +2,7 @@ import { BrowserRouter, Routes as Switch, Route } from 'react-router-dom'
 
 import { paths } from '$utils/paths'
 
-import BaseLayout from '$layouts/BaseLayout'
+import FeedLayout from '$layouts/FeedLayout'
 
 import Home from '$pages/Home'
 
@@ -10,7 +10,7 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path={paths.home} element={<BaseLayout/>}>
+        <Route path={paths.home} element={<FeedLayout/>}>
           <Route index element={<Home/>}/>
         </Route>
       </Switch>

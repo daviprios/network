@@ -1,8 +1,16 @@
+@use '$styles/colors'
+
 *
   margin: 0
   padding: 0
   box-sizing: border-box
-  font-family: 'Roboto' sans-serif
+  font-family: sans-serif
 
 html, body, #root
   height: 100%
+
+  color: colors.$color
+  background-color: colors.$background
+
+ul, ol, li
+  list-style-type: none

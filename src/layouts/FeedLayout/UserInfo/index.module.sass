@@ -1,0 +1,72 @@
+@use '$styles/colors'
+
+.container
+  width: 300px
+
+  padding: 15px
+
+  background-color: colors.$section-background
+  border-radius: 15px
+
+  .title
+    margin-bottom: 1rem
+
+  .profile
+    display: flex
+
+    margin-bottom: 1rem
+
+    .avatar
+      img
+        height: 80px
+        width: 80px
+
+        background-color: red
+        border-radius: 50%
+
+    .name
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      margin-left: 5px
+
+  .shortcuts
+
+    .inputListItem
+      margin: 0.25rem 0
+
+      border-radius: 5px
+
+      div
+        display: flex
+
+        width: 100%
+
+        input 
+          flex-grow: 1
+
+          display: inline-block
+
+          padding: 0 0.25rem
+
+          color: colors.$color
+          background-color: colors.$button-background
+
+          border-radius: 5px
+
+    .linkListItem
+      a
+        display: inline-block
+
+        width: 100%
+
+        margin: 0.25rem 0
+        padding: 0.25rem 0.5rem
+
+        color: colors.$link-text
+        background-color: colors.$button-background
+
+        border-radius: 5px
+
+        text-decoration: none
