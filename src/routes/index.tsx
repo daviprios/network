@@ -1,17 +1,18 @@
-import { BrowserRouter, Routes as Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Routes as Switch, Route, Navigate } from 'react-router-dom'
 
 import { paths } from '$utils/paths'
 
 import FeedLayout from '$layouts/FeedLayout'
 
-import Home from '$pages/Home'
+import Feed from '$pages/Feed'
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
         <Route path={paths.home} element={<FeedLayout/>}>
-          <Route index element={<Home/>}/>
+          <Route index element={<Navigate to={paths.feed}/>}/>
+          <Route path={paths.feed} element={<Feed/>}/>
         </Route>
       </Switch>
     </BrowserRouter>
